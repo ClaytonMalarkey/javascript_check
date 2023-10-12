@@ -1,8 +1,14 @@
 <template>
     <div>
-        <h1>
-            {{data}}
-        </h1>
+        <div v-for="tweet in tweets" :key="tweet">
+            <h1>{{ tweet }}</h1>
+        </div>
+        <div>
+            <h1>the user has {{ numberOfFriends }} freinds</h1>
+        </div>
+        <div>
+            <h1>the user is logged in is {{ isLoggedin }}</h1>
+        </div>
     </div>
 </template>
   
@@ -17,6 +23,7 @@
             }
         },
     }
+
   </script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
