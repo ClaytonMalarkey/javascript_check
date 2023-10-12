@@ -10,8 +10,13 @@ import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
+  data: function() {
+            return {
+
+            }
+  },
   components: {
-    HelloWorld
+    HelloWorld : HelloWorld
   }
 }
 </script>
